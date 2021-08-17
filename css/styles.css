@@ -40,11 +40,45 @@ h1 {
 
 .dropdown {
   float: right;
+  cursor: pointer;
 }
 
 .dropdown img {
   display: inline-block;
   padding-top: 10px;
+}
+
+.navbar-popup {
+  font-size: 18px;
+  background-color: white;
+  color: #1f3f5b;
+  font-weight: 600;
+  border-radius: 0.25em;
+  padding: 30px;
+}
+
+.navbar-popup .hidden-ul {
+  margin-top: 1rem;
+  color: #6f8190;
+  background-color: #f0eeee;
+  border-radius: 0.25rem;
+}
+
+.navbar-popup ul {
+  list-style-type: none;
+}
+
+.navbar-popup ul li {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.navbar-popup ul li:hover {
+  color: #25252d;
+}
+
+.navbar-popup ul li img {
+  margin-left: 7px;
 }
 
 .top-content {
@@ -161,7 +195,8 @@ h1 {
 }
 
 .laptop-mobile {
-  background: url(../images/illustration-laptop-mobile.svg);
+  background: url(../images/illustration-laptop-mobile.svg) no-repeat;
+  background-size: 100% 100%;
 }
 
 footer {
@@ -177,10 +212,18 @@ footer ul {
 
 footer ul li {
   color: #c8c8cb;
-  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 footer ul li:nth-of-type(1) {
   color: white;
-  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.flex-item {
+  margin-bottom: 2.5rem;
+}
+
+.flex-item:nth-of-type(1) {
+  margin-bottom: 4rem;
 }
