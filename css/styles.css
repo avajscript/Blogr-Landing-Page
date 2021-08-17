@@ -203,10 +203,11 @@ h1 {
 .infrastructure-container {
   position: relative;
   width: 100%;
-  border-radius: 0 7rem 0 0;
+  border-radius: 0 7rem 0 7rem;
   background: url(../images/bg-pattern-circles.svg) #2c2d3f no-repeat;
   background-size: cover;
   background-position: center -300px;
+  margin-bottom: 6rem;
 }
 
 .infrastructure-container .article h1 {
@@ -216,6 +217,7 @@ h1 {
 
 .infrastructure-container .article p {
   color: white;
+  margin-bottom: 8rem;
 }
 
 .phone-image-container {
@@ -237,6 +239,7 @@ footer {
   color: white;
   border-radius: 0 7rem 0 0;
   padding: 10% 20%;
+  margin-top: 8rem;
 }
 
 footer ul {
@@ -246,11 +249,16 @@ footer ul {
 footer ul li {
   color: #c8c8cb;
   margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 
 footer ul li:nth-of-type(1) {
   color: white;
   margin-bottom: 1.5rem;
+}
+
+footer ul li:hover {
+  color: white;
 }
 
 .flex-item {

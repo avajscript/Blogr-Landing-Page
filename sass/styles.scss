@@ -193,10 +193,11 @@ h1 {
 .infrastructure-container {
   position: relative;
   width: 100%;
-  border-radius: 0 7rem 0 0;
+  border-radius: 0 7rem 0 7rem;
   background: url(../images/bg-pattern-circles.svg) hsl(237, 17%, 21%) no-repeat;
   background-size: cover;
   background-position: center -300px;
+  margin-bottom: 6rem;
   .article {
     h1 {
       font-size: 2rem;
@@ -204,6 +205,7 @@ h1 {
     }
     p {
       color: white;
+      margin-bottom: 8rem;
     }
   }
 }
@@ -225,15 +227,20 @@ footer {
   color: white;
   border-radius: 0 7rem 0 0;
   padding: 10% 20%;
+  margin-top: 8rem;
 
   ul {
     list-style-type: none;
     li {
       color: hsl(240, 2%, 79%);
       margin-bottom: 0.5rem;
+      cursor: pointer;
       &:nth-of-type(1) {
         color: white;
         margin-bottom: 1.5rem;
+      }
+      &:hover {
+        color: white;
       }
     }
   }
