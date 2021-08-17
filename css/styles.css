@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-  padding: 20px;
+  padding: 20px 5%;
   width: 100%;
   color: white;
   background-image: url(../images/bg-pattern-intro.svg), linear-gradient(#ff8f70, #ff3d54);
@@ -28,6 +28,7 @@ body {
   background-size: cover;
   background-position: center;
   border-radius: 0 0 0 7rem;
+  position: relative;
 }
 
 h1 {
@@ -49,6 +50,8 @@ h1 {
 }
 
 .navbar-popup {
+  position: absolute;
+  width: 90%;
   font-size: 18px;
   background-color: white;
   color: #1f3f5b;
@@ -68,6 +71,10 @@ h1 {
   list-style-type: none;
 }
 
+.navbar-popup ul .li-button:nth-of-type(3) {
+  border-bottom: 2px solid #e6e4e4;
+}
+
 .navbar-popup ul li {
   padding: 15px;
   cursor: pointer;
@@ -79,6 +86,32 @@ h1 {
 
 .navbar-popup ul li img {
   margin-left: 7px;
+}
+
+.login {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.login:hover {
+  color: black;
+}
+
+.sign-up {
+  display: inline-block;
+  color: white;
+  background: linear-gradient(to right, #ff8f70, #ff3d54);
+  padding: 10px 35px;
+  border-radius: 2rem;
+  cursor: pointer;
+  height: 45px;
+}
+
+.sign-up:hover {
+  color: #ff3d54;
+  background: white;
+  border: 1px solid #ff3d54;
 }
 
 .top-content {
