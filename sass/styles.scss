@@ -11,7 +11,7 @@ body {
 .main {
   width: 100%;
   text-align: center;
-  .navbar-flex {
+  .title {
     text-align: left;
   }
 }
@@ -32,8 +32,16 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.navbar-flex {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 .title {
-  display: inline-block;
+  float: left;
 }
 
 .dropdown {
@@ -131,7 +139,7 @@ h1 {
 
   &:hover {
     color: white;
-    background-color: hsl(13, 100%, 72%);
+    background-color: hsl(355, 100%, 74%);
   }
 }
 
@@ -249,6 +257,134 @@ footer {
 .flex-item {
   margin-bottom: 2.5rem;
   &:nth-of-type(1) {
+    margin-bottom: 4rem;
+  }
+}
+
+// Desktop
+
+.desktop-image {
+  display: none;
+}
+
+.desktop-navbar {
+  display: none;
+  line-height: 41px;
+  justify-content: center;
+  font-weight: 600;
+  ul {
+    list-style-type: none;
+    li {
+      margin: 0 30px;
+      cursor: pointer;
+      img {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+.float-left {
+  float: left;
+  margin-left: 5%;
+  p {
+    display: inline-block;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.desktop-nav-hidden {
+  position: absolute;
+  padding: 1.2rem 0;
+  text-align: left;
+  background-color: white;
+  border-radius: 0.25rem;
+  color: hsl(207, 13%, 34%);
+  li:hover {
+    color: black;
+  }
+}
+.desktop-nav-item {
+  display: inline-block;
+  position: relative;
+}
+
+.float-right {
+  float: right;
+  li {
+    display: inline-block;
+
+    &:nth-of-type(2) {
+      margin-right: 0;
+      padding: 0 30px;
+      border-radius: 4rem;
+      background-color: white;
+      color: hsl(356, 100%, 66%);
+      &:hover {
+        background-color: hsl(355, 100%, 74%);
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1052px) {
+  // Hide mobile elements
+  .dropdown {
+    display: none;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  // Show desktop elements
+
+  .desktop-image {
+    display: block;
+    position: relative;
+    left: 50px;
+    top: -70px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .desktop-navbar {
+    display: block;
+  }
+
+  .header {
+    padding: 5% 10%;
+    h1 {
+      font-size: 2.6rem;
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+
+  .flex-one {
+    display: flex;
+    width: 50%;
+  }
+  .flex-two {
+    display: flex;
+    width: 50%;
+  }
+
+  .middle-content {
+    margin: 8rem;
+  }
+  .article {
+    text-align: left;
+  }
+  .middle-main-header {
     margin-bottom: 4rem;
   }
 }

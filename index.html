@@ -19,12 +19,60 @@
       <header class="header">
         <div class="navbar">
           <div class="navbar-flex">
-            <div class="title">
-              <h1>Blogr</h1>
+          <div class="title">
+            <h1>Blogr</h1>
+          </div>
+          <div class="desktop-navbar">
+            <div class="float-left">
+              <ul>
+                <li class = 'desktop-nav-item'><p>Product</p>
+                  <img src = './images/icon-arrow-light.svg'/>
+
+                  <ul style = 'display: none' class = 'desktop-nav-hidden'>
+                    <li>Overview</li>
+                    <li>Pricing</li>
+                    <li>Marketplace</li>
+                    <li>Features</li>
+                    <li>Integrations</li>
+                  </ul>
+
+                </li>
+
+                <li class = 'desktop-nav-item'><p>Company</p>
+                  <img src = './images/icon-arrow-light.svg'/>
+
+                  <ul style = 'display: none' class = 'desktop-nav-hidden'>
+                    <li>About</li>
+                    <li>Team</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                  </ul>
+
+                </li>
+
+                <li class = 'desktop-nav-item'><p>Connect</p>
+                  <img src = './images/icon-arrow-light.svg'/>
+
+                  <ul style = 'display: none' class = 'desktop-nav-hidden'>
+                    <li>Contact</li>
+                    <li>Newsletter</li>
+                    <li>LinkedIn</li>
+                  </ul>
+
+                </li>
+
+              </ul>
+
             </div>
-            <div class="dropdown">
-              <img id="dropdown-button" src="./images/icon-hamburger.svg" />
+            <div class="float-right">
+              <ul>
+                <li>Login</li>
+                <li>Sign up</li>
+              </ul>
             </div>
+          </div>
+          <div class="dropdown">
+            <img id="dropdown-button" src="./images/icon-hamburger.svg" />
           </div>
         </div>
         <div style="display: none" class="navbar-popup">
@@ -79,17 +127,28 @@
       </header>
 
       <div class="middle-content">
-        <header class="article-header">
+        <header class="article-header middle-main-header">
           <h1>Designed for the future</h1>
         </header>
 
         <div class="flex-container">
+          <div class="flex-two">
+
           <div class="middle-image">
-            <div class="mobile-image editor-mobile">
-              <img src="./images/illustration-editor-mobile.svg" />
+
+            <div class=" mobile-image editor-mobile">
+              <img  src="./images/illustration-editor-mobile.svg" />
+             
             </div>
+            <div class="desktop-image">
+               <img class = 'desktop-image' src = './images/illustration-editor-desktop.svg'/>
+            </div>
+
           </div>
 
+        </div>
+        <div class="flex-one">
+          <div class="base-flex-container">
           <article class="article">
             <header class="article-header">
               <h1>Introducing an extensible editor</h1>
@@ -115,10 +174,13 @@
               you're in full contol.
             </p>
           </article>
+          </div>
+          </div>
         </div>
       </div>
 
       <div class="infrastructure-container">
+        <div class="base-flex-container">
         <div class="phone-image-container">
           <img src="./images/illustration-phones.svg" />
         </div>
@@ -131,6 +193,7 @@
             site competitive.
           </p>
         </article>
+        </div>
       </div>
 
       <div class="bottom-content">

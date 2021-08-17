@@ -14,7 +14,7 @@ body {
   text-align: center;
 }
 
-.main .navbar-flex {
+.main .title {
   text-align: left;
 }
 
@@ -35,8 +35,14 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.navbar-flex::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .title {
-  display: inline-block;
+  float: left;
 }
 
 .dropdown {
@@ -139,7 +145,7 @@ h1 {
 
 .start-button:hover {
   color: white;
-  background-color: #ff8f70;
+  background-color: #ff7a85;
 }
 
 .learn-button {
@@ -267,4 +273,129 @@ footer ul li:hover {
 
 .flex-item:nth-of-type(1) {
   margin-bottom: 4rem;
+}
+
+.desktop-image {
+  display: none;
+}
+
+.desktop-navbar {
+  display: none;
+  line-height: 41px;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.desktop-navbar ul {
+  list-style-type: none;
+}
+
+.desktop-navbar ul li {
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+.desktop-navbar ul li img {
+  margin-left: 5px;
+}
+
+.float-left {
+  float: left;
+  margin-left: 5%;
+}
+
+.float-left p {
+  display: inline-block;
+}
+
+.float-left p:hover {
+  text-decoration: underline;
+}
+
+.desktop-nav-hidden {
+  position: absolute;
+  padding: 1.2rem 0;
+  text-align: left;
+  background-color: white;
+  border-radius: 0.25rem;
+  color: #4b5862;
+}
+
+.desktop-nav-hidden li:hover {
+  color: black;
+}
+
+.desktop-nav-item {
+  display: inline-block;
+  position: relative;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-right li {
+  display: inline-block;
+}
+
+.float-right li:nth-of-type(2) {
+  margin-right: 0;
+  padding: 0 30px;
+  border-radius: 4rem;
+  background-color: white;
+  color: #ff525d;
+}
+
+.float-right li:nth-of-type(2):hover {
+  background-color: #ff7a85;
+  color: white;
+}
+
+@media screen and (min-width: 1052px) {
+  .dropdown {
+    display: none;
+  }
+  .mobile-image {
+    display: none;
+  }
+  .desktop-image {
+    display: block;
+    position: relative;
+    left: 50px;
+    top: -70px;
+  }
+  .desktop-image img {
+    width: 100%;
+  }
+  .desktop-navbar {
+    display: block;
+  }
+  .header {
+    padding: 5% 10%;
+  }
+  .header h1 {
+    font-size: 2.6rem;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+  .flex-one {
+    display: flex;
+    width: 50%;
+  }
+  .flex-two {
+    display: flex;
+    width: 50%;
+  }
+  .middle-content {
+    margin: 8rem;
+  }
+  .article {
+    text-align: left;
+  }
+  .middle-main-header {
+    margin-bottom: 4rem;
+  }
 }
