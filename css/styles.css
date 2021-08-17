@@ -351,6 +351,10 @@ footer ul li:hover {
   color: white;
 }
 
+.desktop-bg-image {
+  display: none;
+}
+
 @media screen and (min-width: 1052px) {
   .dropdown {
     display: none;
@@ -367,6 +371,15 @@ footer ul li:hover {
   .desktop-image img {
     width: 100%;
   }
+  .desktop-bg-image {
+    width: 100%;
+    display: block;
+    background-size: 100% 100%;
+  }
+  .desktop-bg-image img {
+    visibility: hidden;
+    width: 100%;
+  }
   .desktop-navbar {
     display: block;
   }
@@ -381,11 +394,10 @@ footer ul li:hover {
     flex-direction: row-reverse;
     position: relative;
   }
-  .flex-one {
+  .base-flex-container {
     display: flex;
-    width: 50%;
   }
-  .flex-two {
+  .flex-one {
     display: flex;
     width: 50%;
   }
@@ -397,5 +409,37 @@ footer ul li:hover {
   }
   .middle-main-header {
     margin-bottom: 4rem;
+  }
+  .phone-image-container {
+    top: -17.5%;
+    position: absolute;
+    right: 50%;
+  }
+  .phone-image-container img {
+    width: 500px;
+  }
+  .width-50 {
+    width: 50%;
+    float: left;
+  }
+  .infrastructure-container {
+    padding: 55px;
+  }
+  .infrastructure-container:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .infrastructure-container .article {
+    position: relative;
+    left: 50%;
+    height: 250px;
+  }
+  .infrastructure-container .article p {
+    margin: 0;
+  }
+  .laptop-desktop {
+    background: url("../images/illustration-laptop-desktop.svg") no-repeat;
+    background-size: 100% 100%;
   }
 }

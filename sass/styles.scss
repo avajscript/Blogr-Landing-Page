@@ -329,6 +329,9 @@ footer {
     }
   }
 }
+.desktop-bg-image {
+  display: none;
+}
 
 @media screen and (min-width: 1052px) {
   // Hide mobile elements
@@ -351,6 +354,15 @@ footer {
       width: 100%;
     }
   }
+  .desktop-bg-image {
+    width: 100%;
+    display: block;
+    background-size: 100% 100%;
+    img {
+      visibility: hidden;
+      width: 100%;
+    }
+  }
 
   .desktop-navbar {
     display: block;
@@ -369,11 +381,11 @@ footer {
     position: relative;
   }
 
-  .flex-one {
+  .base-flex-container {
     display: flex;
-    width: 50%;
   }
-  .flex-two {
+
+  .flex-one {
     display: flex;
     width: 50%;
   }
@@ -386,5 +398,39 @@ footer {
   }
   .middle-main-header {
     margin-bottom: 4rem;
+  }
+  .phone-image-container {
+    top: -17.5%;
+    position: absolute;
+    right: 50%;
+    img {
+      width: 500px;
+    }
+  }
+
+  .width-50 {
+    width: 50%;
+    float: left;
+  }
+  .infrastructure-container {
+    padding: 55px;
+    &:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .article {
+      position: relative;
+      left: 50%;
+      height: 250px;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .laptop-desktop {
+    background: url("../images/illustration-laptop-desktop.svg") no-repeat;
+    background-size: 100% 100%;
   }
 }
