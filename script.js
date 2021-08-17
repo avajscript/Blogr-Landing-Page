@@ -7,9 +7,13 @@ window.onload = () => {
   // Functions
 
   function toggleDropdown() {
-    dropDown.style.display == "none"
-      ? (dropDown.style.display = "block")
-      : (dropDown.style.display = "none");
+    if (dropDown.style.display == "none") {
+      dropDown.style.display = "block";
+      dropdownButton.src = "./images/icon-close.svg";
+    } else {
+      dropDown.style.display = "none";
+      dropdownButton.src = "./images/icon-hamburger.svg";
+    }
   }
 
   function toggleNavItem(event) {
