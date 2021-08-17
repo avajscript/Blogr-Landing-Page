@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: Overpass;
+}
+
+.main {
+  width: 100%;
+  text-align: center;
+  .navbar-flex {
+    text-align: left;
+  }
+}
+.header {
+  padding: 20px;
+  width: 100%;
+  color: white;
+  background-image: url(../images/bg-pattern-intro.svg),
+    linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 0 7rem;
+}
+h1 {
+  margin-bottom: 1rem;
+}
+
+.title {
+  display: inline-block;
+}
+
+.dropdown {
+  float: right;
+  img {
+    display: inline-block;
+    padding-top: 10px;
+  }
+}
+
+.top-content {
+  margin: 6rem 0 8rem;
+}
+.heading {
+  padding-bottom: 2rem;
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.buttons {
+  width: 334px;
+  margin: 0 auto;
+}
+.start-button {
+  background-color: white;
+  color: hsl(353, 100%, 62%);
+  font-weight: 600;
+
+  &:hover {
+    color: white;
+    background-color: hsl(13, 100%, 72%);
+  }
+}
+
+.learn-button {
+  background: hsl(353, 100%, 62%);
+  border: 1px solid white;
+  font-weight: 500;
+
+  &:hover {
+    color: hsl(13, 100%, 72%);
+    background-color: white;
+  }
+}
+.button {
+  font-family: Ubuntu;
+  display: inline-block;
+  padding: 12px 20px;
+  text-align: center;
+  width: 145px;
+  border-radius: 2rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.middle-content {
+  margin: 6rem 0 16rem;
+
+  p {
+    color: hsl(207, 13%, 34%);
+    font-weight: 500;
+  }
+}
+.middle-header {
+  h1 {
+    font-size: 2rem;
+    color: hsl(208, 49%, 24%);
+  }
+}
+.editor-bg {
+  background: url("../images/illustration-editor-mobile.svg");
+}
+
+.mobile-image {
+  width: 100%;
+
+  background-size: 100% 100%;
+  img {
+    visibility: hidden;
+    width: 100%;
+  }
+}
+.article {
+  padding: 20px;
+  p {
+    line-height: 1.8rem;
+  }
+}
+
+.infrastructure-container {
+  position: relative;
+  width: 100%;
+  border-radius: 0 7rem 0 0;
+  background: url(../images/bg-pattern-circles.svg) hsl(237, 17%, 21%) no-repeat;
+  background-size: cover;
+  background-position: center -300px;
+  .article {
+    h1 {
+      font-size: 2rem;
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+}
+
+.phone-image-container {
+  position: relative;
+  bottom: 200px;
+  img {
+    width: 100%;
+  }
+}
