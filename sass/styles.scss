@@ -385,9 +385,18 @@ footer {
     display: flex;
   }
 
+  .vertical-flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .flex-one {
     display: flex;
     width: 50%;
+  }
+
+  .base-flex {
+    display: flex;
   }
 
   .middle-content {
@@ -412,6 +421,7 @@ footer {
     width: 50%;
     float: left;
   }
+
   .infrastructure-container {
     padding: 55px;
     &:after {
@@ -430,7 +440,19 @@ footer {
     }
   }
   .laptop-desktop {
+    position: relative;
     background: url("../images/illustration-laptop-desktop.svg") no-repeat;
     background-size: 100% 100%;
+    left: -14%;
+  }
+  .bottom-content {
+    padding: 5rem 0;
+    content: "";
+    display: table;
+    clear: both;
+    position: relative;
+  }
+  .top-margin {
+    margin-top: 20%;
   }
 }
