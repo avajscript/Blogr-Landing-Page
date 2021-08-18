@@ -461,4 +461,12 @@ footer ul li:hover {
   .top-margin {
     margin-top: 20%;
   }
+  .horizontal-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer {
+    padding-left: 10%;
+  }
 }
