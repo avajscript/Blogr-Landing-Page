@@ -22,9 +22,8 @@ body {
   background-image: url(../images/bg-pattern-intro.svg),
     linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  background-position: 35% 50%;
+
   border-radius: 0 0 0 7rem;
   position: relative;
 }
@@ -248,7 +247,7 @@ footer {
         margin-bottom: 1.5rem;
       }
       &:hover {
-        color: white;
+        text-decoration: underline;
       }
     }
   }
@@ -354,6 +353,17 @@ footer {
       width: 100%;
     }
   }
+  .header {
+    background-position: 25% 50%;
+  }
+  .align-wrapper {
+    position: relative;
+  }
+  .edit-image {
+    position: relative;
+    top: -210px;
+    right: -200px;
+  }
   .desktop-bg-image {
     width: 100%;
     display: block;
@@ -407,6 +417,9 @@ footer {
   }
   .middle-main-header {
     margin-bottom: 4rem;
+    h1 {
+      font-size: 2.5rem;
+    }
   }
   .phone-image-container {
     top: -17.5%;
@@ -462,5 +475,10 @@ footer {
   }
   footer {
     padding-left: 10%;
+  }
+  .clearfix {
+    display: table;
+    clear: both;
+    position: relative;
   }
 }
